@@ -97,7 +97,10 @@ submitBtn.addEventListener('click',() => {
         if(currentQuiz < quizData.length){
             loadQuiz();
         }else{
-            quiz.innerHTML = `<h3>${score} Of ${quizData.length}</h3>`;
+            quiz.innerHTML = `<h3>${score} Of ${quizData.length}</h3>
+
+            <button onClick="location.reload()">Try again ?</button>
+            `;
         }
         
     };
